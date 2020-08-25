@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav> <!-- start navigation -->
+        <ul> <!-- navigation content -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="gear.html">Gear I Use</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul> <!-- end navigation content -->
+    </nav> <!-- end navigation -->
+    
+    
+    <div>
+        <main>
+            <section class="aboutSections"> <!-- section for header -->
+                <h1 class="h1Style">Portfolio</h1>
+            </section>
+            <section id="portfolioBody"> <!-- section for text -->
+                <div class="container">
+                    
+                    <div class="galleryContainer width-3 height-2">
+                        <div class="galleryItem">
+                            <div class="image">
+                                <img src="assets/bath/bathabbey.jpg" alt="Bath Abbey" onclick="openModal(); currentSlide(1)" class="hoverShadow">
+                            </div>
+                            <div class="text">
+                                Bath Abbey
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="galleryContainer width-3 height-3">
+                        <div class="galleryItem">
+                            <div class="image">
+                                <img src="assets/bath/weir.jpg" alt="Weir" onclick="openModal(); currentSlide(2)" class="hoverShadow">
+                            </div>
+                            <div class="text">
+                                Bath Weir
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="galleryContainer width-3 height-3">
+                        <div class="galleryItem">
+                            <div class="image">
+                                <img src="assets/bath/solsburyhillsunrise.jpg" alt="Solsbury Hill sunrise" onclick="openModal(); currentSlide(3)" class="hoverShadow">
+                            </div>
+                            <div class="text">
+                                Sunrise at Solsbury Hill
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="galleryContainer width-3 height-2">
+                        <div class="galleryItem">
+                            <div class="image">
+                                <img src="assets/bath/priorpark.jpg" alt="Prior Park" onclick="openModal(); currentSlide(4)" class="hoverShadow">
+                            </div>
+                            <div class="text">
+                                Prior Park
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="galleryContainer width-4 height-2">
+                        <div class="galleryItem">
+                            <div class="image">
+                                <img src="assets/bath/pultneybridge.jpg" alt="Pultney Bridge" onclick="openModal(); currentSlide(5)" class="hoverShadow">
+                            </div>
+                            <div class="text">
+                                Pultney Bridge
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="galleryContainer width-4 height-2">
+                        <div class="galleryItem">
+                            <div class="image">
+                                <img src="assets/bath/solsburyhill.jpg" alt="Solsbury Hill" onclick="openModal(); currentSlide(6)" class="hoverShadow">
+                            </div>
+                            <div class="text">
+                                View from Solsbury Hill
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="galleryContainer width-2 height-3">
+                        <div class="galleryItem">
+                            <div class="image">
+                                <img src="assets/bath/kennetandavoncanal.jpg" alt="Kennet and Avon canal" onclick="openModal(); currentSlide(7)" class="hoverShadow">
+                            </div>
+                            <div class="text">
+                                Kennet and Avon canal
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="galleryContainer width-2 height-1">
+                        <div class="galleryItem">
+                            <div class="image">
+                                <img src="assets/bath/bathevening.jpg" alt="Bath Evening" onclick="openModal(); currentSlide(8)" class="hoverShadow">
+                            </div>
+                            <div class="text">
+                                An evening in Bath
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+
+                <!-- the modal -->
+                <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modalContent">
+
+                        <div class="mySlides">
+                            <img src="assets/bath/bathabbey.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <img src="assets/bath/weir.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <img src="assets/bath/solsburyhillsunrise.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <img src="assets/bath/priorpark.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <img src="assets/bath/pultneybridge.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <img src="assets/bath/kennetandavoncanal.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <img src="assets/bath/solsburyhill.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <img src="assets/bath/bathevening.jpg" style="width:100%">
+                        </div>
+
+                        <!-- next/previous control-->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    </div>
+                </div>
+            </section>        
+    <footer class="footer">
+        <p>Scott Blackley Web Development || 2020 | <a href="references.html">References</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

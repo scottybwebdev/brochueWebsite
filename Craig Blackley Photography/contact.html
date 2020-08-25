@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav> <!-- start navigation -->
+        <ul> <!-- navigation content -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="gear.html">Gear I Use</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul> <!-- end navigation content -->
+    </nav> <!-- end navigation -->
+
+    <div id="aboutWrapper">
+        <main>
+            <section class="aboutSections"> <!-- section for header -->
+                <h1 class="h1Style">Contact</h1>
+            </section>
+            <section>
+                <img src="assets/camera.jpg" alt="Camera" class="imageRight gearImages">
+                <form action="POST" data-netlify="true">
+                    <div class="fields">
+                        <div class="field half fieldStyle">
+                            <input name="Full name" type="text" required id="fullName"
+                            placeholder="Full name" pattern="[a-zA-Z]+" title="Please enter your full name" size="40" accesskey="f" class="textAreaCols">
+                        </div>
+                        <div class="field half fieldStyle">
+                            <input name="emailAddress" type="text" required id="emailAddress"
+                            placeholder="Email Address" pattern="^[a-zA-Z0-9_-]+@[a-zA-Z0-9]+(\.[a-zA-Z]+){1,2}$" title="Please enter your email address" autocomplete="email" size="40" maxlength="50" class="textAreaCols">
+                        </div>
+                        <div class="field fieldStyle">
+                            <textarea name="message" id="message" placeholder="Please enter your message" rows="16" cols="100" required class="textAreaRows textAreaCols"></textarea>
+                        </div>
+                        <div class="field fieldStyle">
+                            <div data-netlify-recaptcha="true"></div>
+                        </div>
+                    </div>
+                    <input type="submit" value="Send Message" class="button primary">
+                </form>
+            </section>
+        </main>
+    </div>       
+    
+    <footer class="footer">
+        <p>Scott Blackley Web Development || 2020 | <a href="references.html">References</a></p>
+    </footer>
+
+</body>
+</html>
